@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Уголок для нас</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #4285f4;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .header-with-bg {
+            background-image: url(https://i.pinimg.com/564x/31/d6/f6/31d6f60d694bd8ba4009709c32dfdc3c.jpg); 
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+        }
+        nav {
+            background-color: #FFC0CB;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background-color: #FF9999;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #FF9999;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .fanfic-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .fanfic-list li {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #FFC0CB;
+            border-radius: 8px;
+            color: white;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .fanfic-text {
+            width: 100%;
+            height: 300px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            overflow-y: scroll;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header-with-bg">
+        <h1>Уголок для нас</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Главная</a>
+        <a href="#film">Фильмы</a>
+        <a href="#serial">Сериалы</a>
+        <a href="#fanfic">Фанфики</a>
+    </nav>
+
+    <div class="container" id="home">
+        <h2>Добро пожаловать!</h2>
+        <p>В вечной дороботке этой помпездный сайт на веки вечные</p>
+    </div>
+
+    <div class="container" id="film">
+            <h2>Фильмы</h2>
+        <p>Божечки кошечки</p>
+        <div class="gallery">
+            <div class="video-container">
+                <iframe src="https://youtu.be/oPFPmVYv84c?si=eylS1VGS55LPGTX1" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe src="https://youtu.be/E30COnMIhlg?si=5Jll_6q0EU_v81US" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe src="https://youtu.be/AHTI40kzKIg?si=HoSx7giCBGL5BE9s" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="serial">
+        <h2>Сериалы</h2>
+        <p>Вперед с песней иди смотреть</p>
+        <div class="gallery">
+            <div class="video-container">
+                <iframe src="https://youtu.be/e6Qy1WoQgVw?si=r1_WpqIHYbJxrgli" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe src="https://youtu.be/aiGF5bCjP1U?si=1Ra09ZAcukTgFTWf" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe src="https://youtu.be/UwLnOM6Zg_8?si=9cV5wQM3mgWOVX2l" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="fanfic">
+        <h2>Фанфики</h2>
+        <ul class="fanfic-list">
+            <li>
+                <h3>Фанфик 1</h3>
+                <div class="fanfic-text">
+                    <p>Текст фанфика 1...</p>
+                </div>
+            </li>
+            <li>
+                <h3>Фанфик 2</h3>
+                <div class="fanfic-text">
+                    <p>Текст фанфика 2...</p>
+                </div>
+            </li>
+            <li>
+                <h3>Фанфик 3</h3>
+                <div class="fanfic-text">
+                    <p>Текст фанфика 3...</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; Уголок для нас. Вся ваша чудоковатость защищена.</p>
+    </footer>
+
+</body>
+</html>
